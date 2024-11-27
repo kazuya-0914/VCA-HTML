@@ -14,11 +14,20 @@ $bp: (
 // 共通CSS
 @import "common";
 
+// 部品CSS
+@import "components";
+
 // ログインCSS
 @import "login";
 
 // ヘッダー
 @import "header";
+
+// 一般ページ
+@import "general/index";
+
+// 管理者ページ
+@import "admin/index";
 
 // フッター
 @import "footer";

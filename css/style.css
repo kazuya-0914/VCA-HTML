@@ -28,6 +28,10 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  margin: 0;
+}
+
 h2 {
   font-size: clamp(24px, 2.6vw, 28px);
 }
@@ -61,6 +65,68 @@ header a {
   color: white;
 }
 
+/* --- 一般ユーザーページ --- */
+#period {
+  display: grid;
+  grid-template-columns: 20% repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+#commendation > ul {
+  display: flex;
+  gap: 1rem;
+  font-size: clamp(16px, 2vw, 24px);
+}
+#commendation > ul li:nth-of-type(1) > span {
+  color: gold;
+}
+#commendation > ul li:nth-of-type(2) > span {
+  color: silver;
+}
+#commendation > ul li:nth-of-type(3) > span {
+  color: saddlebrown;
+}
+
+#totalling > output {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 60% 40%;
+}
+#totalling > output > figure {
+  background-color: lightgray;
+}
+
+#ranking > output {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60% 40%;
+}
+#ranking > output > div > ul {
+  font-size: clamp(16px, 2vw, 24px);
+}
+#ranking > output > div > ul li {
+  cursor: pointer;
+}
+#ranking > output > div > ul li:nth-of-type(1) span:nth-of-type(1) {
+  color: gold;
+}
+#ranking > output > div > ul li:nth-of-type(2) span:nth-of-type(1) {
+  color: silver;
+}
+#ranking > output > div > ul li:nth-of-type(3) span:nth-of-type(1) {
+  color: saddlebrown;
+}
+#ranking > output > div:nth-of-type(2) > span:nth-of-type(1) {
+  color: gold;
+}
+#ranking > output > div:nth-of-type(2) > figure {
+  height: 200px;
+  background-color: lightgray;
+}
+
+/* --- マイページ --- */
+/*--- 管理者ページ ---*/
 /* --- フッター --- */
 footer {
   position: sticky;
