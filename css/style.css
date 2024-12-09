@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /* --- 共通CSS --- */
+h3, h2, h2 .survey-header {
+  padding-left: 0.7rem;
+  border-left: solid 0.5rem mediumblue;
+}
+
 html {
   font-size: 100%;
   height: 100%;
@@ -9,6 +14,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+body.survey-body {
+  max-width: 430px;
 }
 
 img {
@@ -35,12 +43,15 @@ p {
 h2 {
   font-size: clamp(24px, 2.6vw, 28px);
 }
+h2, h2 .survey-header {
+  display: inline-block;
+}
 
 h3 {
   font-size: clamp(20px, 2.2vw, 24px);
 }
 
-/* --- ログイン --- */
+/* --- 従業員ページログイン --- */
 #login-form {
   display: grid;
   grid-template-columns: 30% 1fr;
@@ -63,6 +74,11 @@ header > nav > ul {
 }
 header a {
   color: white;
+}
+
+/* --- アンケートページ --- */
+textarea {
+  height: 10rem;
 }
 
 /* --- 一般ユーザーページ --- */

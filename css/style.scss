@@ -9,6 +9,10 @@ $bp: (
   }
 }
 
+// 色 -----
+$c-base: mediumblue;
+$c-sub: mediumvioletred;
+
 // それぞれのSCSSの読み込み -----
 
 // 共通CSS
@@ -22,6 +26,9 @@ $bp: (
 
 // ヘッダー
 @import "header";
+
+// アンケートページ
+@import "survey/index";
 
 // 一般ページ
 @import "general/index";
