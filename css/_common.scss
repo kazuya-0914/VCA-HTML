@@ -34,7 +34,7 @@ p {
 }
 h2 {
   font-size: clamp(24px, 2.6vw, 28px);
-  &, .survey-header {
+  &.survey-header {
     @extend %header;
     display: inline-block;
   }
