@@ -1,5 +1,23 @@
 /* --- 管理者ページ --- */
-// 従業員情報
+// CSVファイル取得
+#csv-file {
+  fieldset {
+    display: grid;
+    grid-template-columns: 20% 1fr 10%;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+// --- 従業員アンケート集計
+// 表示期間
+#admin-period {
+  display: grid;
+  grid-template-columns: 20% repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
 #employee-name {
   display: grid;
   grid-template-columns: 20% repeat(3, 1fr);

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お客様の声アプリ | 従業員ページ</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -20,7 +20,11 @@
       </ul>
       <ul>
         <li><a href="update.html">山田太郎さんマイページ</a></li>
-        <li><a href="login.html">ログアウト</a></li>
+        <li>
+          <form action="" method="post">
+            <button type="submit" class="p-0 btn btn-link">ログアウト</button>
+          </form>
+        </li>
       </ul>
     </nav>
   </header>
@@ -38,27 +42,30 @@
       </section>
 
       <!-- 表示期間 -->
-      <section id="period" class="py-4">
+      <section id="general-period" class="py-4">
         <h3>表示期間</h3>
-        <select name="" id="" class="form-select">
-          <option value="2022">2022年度</option>
-          <option value="2023">2023年度</option>
-          <option value="2024" selected>2024年度</option>
-        </select>
-        <select name="" id="" class="form-select">
-          <option value="1" selected>1月</option>
-          <option value="2">2月</option>
-          <option value="3">3月</option>
-          <option value="4">4月</option>
-          <option value="5">5月</option>
-          <option value="6">6月</option>
-          <option value="7">7月</option>
-          <option value="8">8月</option>
-          <option value="9">9月</option>
-          <option value="10">10月</option>
-          <option value="11">11月</option>
-          <option value="12">12月</option>
-        </select>
+        <form action="" method="get">
+          <select name="" id="" class="form-select">
+            <option value="2022">2022年度</option>
+            <option value="2023">2023年度</option>
+            <option value="2024" selected>2024年度</option>
+          </select>
+          <select name="" id="" class="form-select">
+            <option value="1" selected>1月</option>
+            <option value="2">2月</option>
+            <option value="3">3月</option>
+            <option value="4">4月</option>
+            <option value="5">5月</option>
+            <option value="6">6月</option>
+            <option value="7">7月</option>
+            <option value="8">8月</option>
+            <option value="9">9月</option>
+            <option value="10">10月</option>
+            <option value="11">11月</option>
+            <option value="12">12月</option>
+          </select>
+          <button type="submit" class="btn btn-secondary">表示</button>
+        </form>
       </section>
 
       <!-- 表彰回数 -->

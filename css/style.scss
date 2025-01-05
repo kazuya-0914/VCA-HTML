@@ -13,6 +13,13 @@ $bp: (
 $c-base: mediumblue;
 $c-sub: mediumvioletred;
 
+// 表彰カラーリスト
+$colorList: (
+  1: gold, 
+  2: silver,
+  3: saddlebrown
+);
+
 // それぞれのSCSSの読み込み -----
 
 // 共通CSS

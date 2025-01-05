@@ -5,12 +5,24 @@ header {
   > nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     > ul {
       display: flex;
+      align-items: center;
       gap: 1rem;
     }
   }
   a {
     color: white;
+  }
+  form {
+    display: inline;
+  }
+  button {
+    text-decoration: none !important;
+    color: white !important;
+    &:hover {
+      text-decoration: underline !important;
+    } 
   }
 }

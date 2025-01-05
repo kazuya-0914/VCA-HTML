@@ -1,17 +1,16 @@
 /* --- 一般ユーザーページ --- */
-// カラーリスト
-$colorList: (
-  1: gold, 
-  2: silver,
-  3: saddlebrown
-);
-
 // 表示期間
-#period {
+#general-period {
   display: grid;
-  grid-template-columns: 20% repeat(2, 1fr);
+  grid-template-columns: 20% 1fr;
   align-items: center;
-  gap: 1rem
+  gap: 1rem;
+  > form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 20%;
+    align-items: center;
+    gap: 1rem
+  }
 }
 
 // 表彰回数
@@ -48,7 +47,6 @@ $colorList: (
 }
 
 // アンケート上位
-
 #ranking {
   > output {
     display: grid;

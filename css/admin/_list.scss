@@ -2,8 +2,13 @@
 @mixin list($n, $grid) {
   display: grid;
   grid-template-columns: $grid;
+  align-items: center;
   gap: 1px;
   > div {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center;    /* 垂直方向の中央揃え */
+    height: 100%;           /* 高さを確保 */
     text-align: center;
     background-color: gainsboro;
     padding: 0.5rem;
@@ -15,9 +20,17 @@
   }
 }
 
-// 従業員一覧ページ
-#employee-list {
-  @include list(7, 10% repeat(6, 1fr));
+// 表彰状贈呈一覧ページ
+#awards-list {
+  @include list(4, repeat(4, 1fr));
+  @for $n from 1 to 4 {
+    .star#{$n} {
+      color: map-get($colorList, $n);
+    }
+  }
+  .grid-row {
+    grid-row: span 3;
+  }
 }
 
 // お客様の声一覧ページ
@@ -25,7 +38,7 @@
   @include list(4, repeat(4, 1fr));
 }
 
-// 表彰状贈呈一覧ページ
-#awards-list {
-  @include list(4, repeat(4, 1fr));
+// 従業員一覧ページ
+#employee-list {
+  @include list(7, 10% repeat(6, 1fr));
 }
